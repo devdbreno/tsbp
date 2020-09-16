@@ -11,17 +11,17 @@ export default class FastifyServerAdapter implements IServerAdapter {
 
   public async start(): Promise<void> {
     try {
-      console.info(`[INFO|FastifyServerAdapter] Server is starting...`)
+      console.info(`[INFO] <FastifyServerAdapter> Server is starting...`)
     } catch ({ message }) {
-      console.error(`[ERROR|FastifyServerAdapter] Error starting the server: ${message}`)
+      console.error(`[ERROR] <FastifyServerAdapter> Error starting the server: ${message}`)
     }
   }
 
   public async close(): Promise<void> {
     try {
-      console.info(`[INFO|FastifyServerAdapter] Server is closing...`)
+      console.info(`[INFO] <FastifyServerAdapter> Server is closing...`)
     } catch ({ message }) {
-      console.error(`[ERROR|FastifyServerAdapter] Error closing the server: ${message}`)
+      console.error(`[ERROR] <FastifyServerAdapter> Error closing the server: ${message}`)
     }
   }
 }

@@ -9,8 +9,8 @@
     "start:watch": "nodemon",
     "build": "tsc -p tsconfig.build.json",
     "prebuild": "rimraf dist",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "lint": "eslint \"{src,test}/**/*.ts\" --fix"
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\" --fix"
   },
   "dependencies": {
     "fastify": "^3.4.1",
@@ -29,6 +29,8 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
     "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
     "ts-node": "^9.0.0",
