@@ -1,6 +1,24 @@
 {
-  "extends": "standard-with-typescript",
+  "root": true,
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "tsconfig.json"
+    "project": "tsconfig.json",
+    "sourceType": "module",
+    "ecmaVersion": 2019
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin"],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/no-empty-function": ["warn"],
+    "@typescript-eslint/no-unused-vars": ["warn"]
   }
 }

@@ -2,26 +2,23 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "CommonJS",
-    "lib": ["DOM", "ES2020", "ESNext.AsyncIterable"],
-    "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "removeComments": true,
     "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "removeComments": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "rootDirs": ["src", "test"],
     "outDir": "dist",
-    "baseUrl": "."
-  },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+    "paths": {
+      "@/*": ["src/*"],
+      "@frameworks/*": ["src/frameworks/*"]
+    }
+  }
 }

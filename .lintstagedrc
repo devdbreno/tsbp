@@ -1,5 +1,6 @@
 {
   "*.ts": [
-    "eslint '{src}/**/*.ts' --quiet --fix"
+    "npm run format",
+    "npm run lint"
   ]
 }
